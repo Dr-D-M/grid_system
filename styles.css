@@ -1,0 +1,302 @@
+
+body{
+	background: #E8E8E8;
+}
+/*NAVIGATOR STYLES*/
+
+#menu{
+	width: 100%;
+	height: 50px;
+	background: #fff;
+	border-radius: 5px;
+	top: 0;
+	z-index: 1;
+
+	/*box-shadow: 10px 5px 5px 5px #d2d2d2;*/ 
+
+}
+.moved-nav nav{
+   position: fixed;
+   box-shadow: 0 5px rgba(0, 0, 0, 0.3);
+  
+}
+li.logo{
+	max-width: 0;
+	overflow: hidden;
+	background: white;
+	transition: all 0.5s;
+	font-weight: 600;
+	font-size: 30px;
+}
+li.logo a{
+	color: black;
+}
+.fixed-nav li.logo{
+	max-width: 500px;
+}
+/*
+nav{
+	position: fixed;
+}*/
+.nav_titles{
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+	color: #191919;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.links{
+	margin-top: 10px;
+}
+
+ a{
+	text-decoration: none;
+	color: #191919;
+}
+
+/*HEADER CONTAINER AND BODY STYLES*/
+
+.top-container{
+	
+	max-width: 960px;
+	height: auto;
+	border: 1px solid black;
+	margin: 0 auto;
+	background: #fff;
+}
+.header{
+
+	width: 100%;
+	height: 250px;
+	border: 1px dotted blue;
+	background: #191919;
+
+}
+
+.head-title{
+	font-size: 150px;
+	text-align: center;
+	margin-top: 30px;
+}
+.title{
+
+	height: 150px;
+	background: #fff;
+	color: #191919;
+}
+.album-title{
+	font-size: 85px;
+	margin-top: 35px;
+	margin-left: 45px;
+}
+
+.blog{
+	display: flex;
+	justify-content: space-between;
+	height: ;
+	border: 1px solid blue;
+}
+#blog-title{
+	margin-top: 10px;
+	text-align: center;
+	color: #c9c9c9;
+	font-weight: bolder;
+	height: 60px;
+	font-size: 30px;
+	border: 1px solid #191919;
+	box-shadow: 2px 2px;
+}
+.more{
+	align-self: flex-end;
+	margin-right: 15px;
+	margin-bottom: 5px;
+}
+.entry-one, .entry-five, .entry-six, .entry-four{
+
+	width: 180px;
+	height: 180px;
+	border: 2px dotted orange;
+	margin-top: 5px;
+	margin-left: 5px;
+}
+.entry-two{
+	flex-grow: 0;
+	width: 180px;
+	height: 180px;
+	border: 2px dotted orange;
+	margin-top: 5px;
+	margin-left: 5px;
+}
+.entry-three{
+	width: 180px;
+	height: 180px;
+	border: 2px dotted orange;
+	margin-top: 5px;
+	margin-left: 5px;
+}
+.video-title{
+	font-size: 35px;
+	color: #c9c9c9;
+	font-weight: bolder;
+}
+#info-tour{
+	border: 1px dotted red;
+	height: auto;
+	margin-top: 10px; 
+	margin-bottom: 10px;
+	background: #616161;
+}
+.featured-video{
+	width: 650px;
+	height: 350px;
+	background: #F0FFF0;
+	border: 2px dotted blue;
+	margin: 0 auto;
+	margin-top: 25px;
+	margin-bottom: 15px;
+}
+.featured-video-two{
+	width: 650px;
+	height: 350px;
+	border: 2px dotted green;
+	margin: 0 auto;
+	margin-top: 25px;
+	margin-bottom: 15px;
+	background: #F0FFF0;
+}
+.featured-video-three{
+	width: 650px;
+	height: 350px;
+	border: 2px dotted pink;
+	margin: 0 auto;
+	margin-top: 25px;
+	margin-bottom: 15px;
+    background: #F0FFF0;
+}
+#album{
+	display: flex;
+	justify-content: flex-end;
+	width: 100%;
+	height: auto;
+	border: 1px double red;
+}
+.album-description{
+	align-self: baseline;
+	margin-left: 25px;
+	font-size: 25px;
+	font-weight: bold;
+}
+.album-description-two{
+
+	margin-left: 25px;
+	font-size: 25px;
+	font-weight: bold;
+}
+.album-one{
+
+	width: 250px;
+	height: 250px;
+	border: 2px double black;
+	margin-top: 10px;
+	margin-left: 10px;
+	background: radial-gradient(cyan, skyblue, black);
+}
+.album-two{
+	width: 250px;
+	height: 250px;
+	border: 2px double black;
+	margin-top: 10px;
+	margin-left: 10px;
+	background: linear-gradient(#E6E6FA, #EE9572, #B0E2FF);
+}
+
+
+footer{
+	color: #191919;
+	margin-top: 15px;
+	width: 100%;
+	height: 50px;
+	background: #c1c1c1;
+}
+
+/*HOVER STYLES*/
+.header:hover{
+	cursor: pointer;
+	background: #fafafa;
+	transition: 3s;
+}
+
+.head-title:hover{
+	transition-delay: 1s;
+	color: #d2d2d2;
+	transition: 3s;
+}
+.title:hover{
+	cursor: pointer;
+	background: #000;
+	color: #fff;
+	transition: 2s;
+}
+
+
+/*RESPONSIVE STYLES*/
+@media only screen and (max-width: 815px){
+	body{
+		display: block;
+	}
+	.nav-titles{
+		width: 100%;
+		height: auto;
+	}
+	.top-container{
+
+		width: 100%;
+	}
+	.head-title{
+		font-size: 120px;
+		margin-top: 50px;
+	}
+	.title{
+		background: linear-gradient(#B2DFEE, #BFEFFF);
+	}
+	.album-title{
+		background: #B2DFEE;
+		font-size: 60px;
+		margin: 0 auto;
+	}
+	.blog{
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+	.entry-one, .entry-two, .entry-three{
+	
+		
+	}
+	#info-tour{
+		width: 100%;
+	}
+	.video-title{
+		font-size: 40px;
+		text-align: center;
+	}
+	.featured-video, .featured-video-two, .featured-video-three{
+		width: 100%;
+	}
+	#social{
+		width: 100%;
+
+	}
+	#album{
+		width: 100%;
+		display: block;
+	}
+	.album-one{
+		margin-bottom: 10px;
+	}
+	.album-two{
+		margin-top: 30px;
+	}
+}

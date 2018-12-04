@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Grid System</title>
+	<link rel="stylesheet" type="text/css" href="/home/david-boc/grid_system/styles.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="/home/david-boc/grid_system/reset.css">
+</head>
+<body>
+	<nav id="menu">
+		<ul class="nav_titles">
+			<li class="logo"><a href="#">ë</a></li>
+				<li class="links"><a href="#album">Music</a></li>
+				<li class="links">Contact</li>
+				<li class="links"><a href="#social">Social Network</a></li>
+				<li class="links">Download</li>
+			</ul>
+		</nav>
+
+	<div class="top-container">
+		<div class="header">
+			<h1 class="head-title">EVERMIST</h1>
+		</div>
+		<div class="title">
+			<h2 class="album-title">The Moment After Now</h2>
+		</div>
+			<h3 id="blog-title">Take A Look At The Band's Blog</h3>
+		<div class="blog">
+
+			<div class="entry-one"></div>
+			<div class="entry-two"></div>
+			<div class="entry-three"></div>
+			<div class="entry-four"></div>
+			<div class="entry-five"></div>
+			<div class="entry-six"></div>
+			<span class="more"><a href="#">>> more</a> </span>
+
+		</div>
+			<div id="info-tour">
+				<h2 class="video-title">Featured Videos</h2>
+		<div class="featured-video"></div>
+		<div class="featured-video-two"></div>
+		<div class="featured-video-three"></div>
+
+	</div>
+	<div id="album">
+		<div class="album-one">
+		</div>
+		<p class="album-description">Places - 2015</p>
+		<div class="album-two"></div>
+		<p class="album-description-two">The Moment After Now - 2019</p>
+	</div>
+    </div>
+    <footer id="social">
+    	<a href="#"id="foot-link">Instagram</a>
+    	<a href="#" id="foot-link">Facebook</a>
+    	<a href="#" id="foot-link">Twitter</a>
+    	<a href="#blog-title">BACK TO THE TOP</a>
+    </footer>
+
+<script type="text/javascript">
+	const menuShadow = document.querySelector('#menu');
+	const topOfNav = menuShadow.offsetTop;
+
+	function shadowScroll(){
+    if (window.scrollY >= topOfNav){
+    	document.body.style.paddingTop = menuShadow.offsetHeight + 'px';
+    	document.body.classList.add('moved-nav');
+		
+    }else{
+    	document.body.style.paddingTop = 0;
+    	document.body.classList.remove('moved-nav');
+     }
+}
+	
+	window.addEventListener('scroll', shadowScroll);
+</script>
+</body>
+</html>
